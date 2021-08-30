@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../JS/crud.js"></script>
+    <title>Menu</title>
+</head>
+<style>
+    .size-box-table{
+        position: absolute;
+        top:4%;
+        left: 34%;
+        width: 65%;
+        margin-right: 4%;
+    }
+    body{
+        background-color: rgba(58, 58, 58, 0.815);
+    }
+    .img-size{
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    .position-text{
+        position:relative;
+        left: 5%;
+    }
+    scroll-container {
+        display: block;
+        height:20rem;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    </style>
+<body>
+    <div class="container float-end size-box-table bg-light border-3 border border-info p-4" >
+        <div class="nav">
+            <img src="../IMG/CONFIPETROL LOGO.PNG" alt="CONFIPETROL petroleo" class="img-size mr-4">
+            <h3 class="text-dark h2 text-center m-4 position-text">
+                TABLA DE USUARIOS
+            </h3>
+        </div>
+        <scroll-container>
+            <div class="row bg-dark text-white table-head">
+                <div class="col col-lg-1 p-3 border border-left border-info">
+                    ID
+                </div>
+                <div class=" p-3 col border border-left border-info">
+                    NOMBRE
+                </div>
+                <div class="col p-3 border border-left border-info">
+                    APELLIDO
+                </div>
+                <div class="p-3 col border border-left border-info">
+                    CARGO
+                </div>
+                <div class="p-3 col border border-left border-info">
+                    CONTRASEÑA
+                </div>
+                <div class="col p-3 border border-left border-info">
+                    ACCION
+                </div>
+            </div>
+            
+            <div id="table">
+                
+            </div>
+            
+        </scroll-container>
+        <div class="mt-4 alert alert-info text-center" id="alert-2">
+    
+        </div>
+    </div>
+
+    <div class="text-center float-start p-4 text-white mt-4 card bg-dark border-info border-3" style="width:30%; margin-left: 3%;">
+        <h1 class="text-ligth h3 mb-3 mt-3">
+            REGISTRO DE USUARIOS
+        </h1>
+        
+        <div class="mt-3">
+            <label for="">NOMBRE:</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mt-3">
+            <label for="">APELLIDO:</label>
+            <input type="text" class="form-control" id="apel">
+        </div>
+        <div class="mt-3 mb-3">
+            <label for="">CARGO:</label>
+            <input type="text" class="form-control" id="car">
+        </div>
+        <div class="mt-3 mb-3">
+            <label for="">CONTRASEÑA:</label>
+            <input type="text" class="form-control" id="pass">
+        </div>
+        <div>
+            <button class="btn btn-info" id="create">GUARDAR</button>
+        </div>
+        <div class="mt-4 alert alert-info" id="alert">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
